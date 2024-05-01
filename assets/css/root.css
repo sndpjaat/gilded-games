@@ -241,7 +241,9 @@
 .op-80{
     opacity: 80%;
 }
-
+.op-60{
+    opacity: 60%;
+}
 .c-white {
     color: var(--white);
 }

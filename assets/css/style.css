@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style-type: none;
     box-sizing: border-box;
     /* outline: 1px solid red; */
@@ -62,17 +62,23 @@
 .gap-29{
     gap: 29px;
 }
+
+
+
 .btn-1{
     background: linear-gradient(149.67deg, #815CC8 29.44%, #1BABFE 81.54%);
-    box-shadow: 0px 8px 30px 0px #1BABFE;
+    box-shadow: 0px 1px 10px 0px #1BABFE;
     border-radius: 79px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 34px;
     padding-left: 34px;
     border-style: none;
-
-
+}
+.btn-1:hover{
+    background: black;
+    box-shadow: 0px 1px 10px 0px #1BABFE;
+    transition: all 400ms linear;
 }
 
 .pt-254{
@@ -89,7 +95,7 @@
 }
 .btn-2{
     background: linear-gradient(149.67deg, #815CC8 29.44%, #1BABFE 81.54%);
-    box-shadow: 0px 8px 30px 0px #1BABFE;
+    box-shadow: 0px 1px 10px 0px #1BABFE;
     border-radius: 79px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -209,6 +215,9 @@
 .max-w-377{
     max-width: 377px;
 }
+.w_367{
+    max-width: 367px;
+}
 .pb-20{
     padding-bottom: 20px;
 }
@@ -217,6 +226,9 @@
 }
 .gap-10{
     gap: 10px;
+}
+.opacity_10{
+    opacity: 10%;
 }
 .backblr{
     top: 270px;
@@ -231,6 +243,18 @@
 }
 .pb-68{
     padding-bottom: 68px;
+}
+.px-12{
+    padding: 12px ;
+}
+.px-20{
+    padding: 20px;
+}
+.px-32{
+    padding: 32px;
+}
+.px-25{
+    padding: 25px;
 }
 .box-frst{
     max-width: 312px;
@@ -343,6 +367,16 @@ border-image: linear-gradient(90deg, #815CC8 0%, #1BABFE 100%) !important;
 
 
 }
+.social-links{
+/* padding: .078px; */
+width: 31.21px;
+height: 31.21px;
+background: linear-gradient(to left, rgba(255, 255, 255, 0.1) 0.01%, rgba(255, 255, 255, 0.03) 99.99%)
+padding-box,linear-gradient(to left, rgba(255, 255, 255, 0.1) 0.01%, rgba(255, 255, 255, 0.03) 99.99%)  border-box;
+border:1px solid transparent;
+
+}
+
 
 
 
