@@ -63,7 +63,34 @@
     gap: 29px;
 }
 
+.hoverline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
 
+.hoverline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--c-white);
+    transition: all 300ms linear;
+}
+
+.hoverline:hover::after {
+    width: 100%;
+}
+
+.textanimation {
+    transition: all 200ms linear;
+}
+
+.textanimation:hover {
+    color: var(--c-white);
+}
 
 .btn-1{
     background: linear-gradient(149.67deg, #815CC8 29.44%, #1BABFE 81.54%);
@@ -192,10 +219,20 @@
     max-width: 312px;
     border-radius: 13px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 255, 255, 0.03) 100%);
-    border: 1px solid;
-    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+ 
+    position: relative;
     
-    
+}
+.crd-one::after{
+    background:  linear-gradient(116.46deg, rgba(255, 255, 255, 0.2) 2.09%, rgba(255, 255, 255, 0.1) 96.43%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 0.78px;
+    pointer-events: none;
+    position: absolute;
 }
 .crd-one:hover{
     transition: all 400ms linear;
@@ -261,8 +298,21 @@
     min-height: 214px;
     border-radius: 24px;
     background: linear-gradient(110.75deg, rgba(255, 255, 255, 0.1) 0.01%, rgba(255, 255, 255, 0.03) 99.99%);
+    position: relative;
    
 }
+.box-frst::after{
+    background:  linear-gradient(116.46deg, rgba(255, 255, 255, 0.2) 2.09%, rgba(255, 255, 255, 0.1) 96.43%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 0.78px;
+    pointer-events: none;
+    position: absolute;
+}
+
 .box-frst:hover{
     transition: all 400ms linear;
     background: linear-gradient(149.67deg, #815CC8 29.44%, #1BABFE 81.54%);
@@ -282,10 +332,42 @@
 .pb-14{
     padding-bottom: 14px;
 }
+.pb-27{
+    padding-bottom: 27px;
+}
 
+.lftcloud{
+    top: 8;
+    left: 262px;
+}
+.rghtsmoke{
+    right:10px;
+    top:262px ;
+}
 
-
-
+.semicolans::after{
+    content: '';
+    position: absolute;
+    width: 102px;
+    height: 102px;
+   bottom: -8%;
+    background-image: url(../img/svg/bx_bxs-quote-right.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.semicolans::before{
+    content: '';
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    top: -23%;
+    left: -8%;
+    background-image: url(../img/svg/bx_bxs-quote-left.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .accordion-body {
     padding: 0px 9px 16px 0px !important;
@@ -298,16 +380,13 @@
 
 .accordion-item {
     background: transparent !important;
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
-    border: 1px solid;
-
-    border-image-source: linear-gradient(90.3deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.03) 100%);
-     */
+   
     
 }
 
 .accordion-button:not(.collapsed) {
     background: transparent !important;
+
 }
 
 .accord {
@@ -363,19 +442,44 @@
     border-radius: 13px;
     border: 5px solid transparent !important;
 
-border-image: linear-gradient(90deg, #815CC8 0%, #1BABFE 100%) !important;
+position: relative;
 
-
+}
+.brdr::after{
+    background:   linear-gradient(90deg, #815CC8 0%, #1BABFE 100%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 5px;
+    pointer-events: none;
+    position: absolute;
 }
 .social-links{
 /* padding: .078px; */
 width: 31.21px;
 height: 31.21px;
-background: linear-gradient(to left, rgba(255, 255, 255, 0.1) 0.01%, rgba(255, 255, 255, 0.03) 99.99%)
-padding-box,linear-gradient(to left, rgba(255, 255, 255, 0.1) 0.01%, rgba(255, 255, 255, 0.03) 99.99%)  border-box;
-border:1px solid transparent;
+background: linear-gradient(110.75deg, rgba(255, 255, 255, 0.1) 0.01%, rgba(255, 255, 255, 0.03) 99.99%);
+position: relative;
 
 }
+
+
+
+.social-links::after{
+    background:  linear-gradient(116.46deg, rgba(255, 255, 255, 0.2) 2.09%, rgba(255, 255, 255, 0.1) 96.43%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 0.78px;
+    pointer-events: none;
+    position: absolute;
+}
+
+
 
 
 

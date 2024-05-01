@@ -43,7 +43,7 @@
     --blur2: #1219D220;
     --blur: #01010140;
     --bg-black: #000002;
-    --white: #FFFFFF;
+    --c-white: #FFFFFF;
     --black: #010101;
     --blue:#6C6CD3;
     --text-purple:#1BABFE;
@@ -245,7 +245,7 @@
     opacity: 60%;
 }
 .c-white {
-    color: var(--white);
+    color: var(--c-white);
 }
 
 .black {
