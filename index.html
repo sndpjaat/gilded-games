@@ -5,19 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GILDED Games</title>
-    <link rel="shortcut icon" href="./assets/img/svg/hrologo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/svg/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        link
 </head>
 
-<body>
+<body onload= "countdown()" >
+
     <section class="nav-background-img min-vh-100 d-flex  flex-column ">
         <div class="nav-background">
             <div class="container max-w-1320 ">
                 <nav class=" pt-30 pb-30 color-bg-black d-flex align-items-center justify-content-between ">
                     <div class="d-flex align-items-center gap-1 z-1">
-                        <a href="#"><img src="./assets/img/svg/hrologo.svg" alt="hrologo.svg"></a>
+                        <a href="#"><img src="./assets/img/svg/hrologo.svg" alt="hrologo.svg" class="max-w-320"></a>
                     </div>
                     <div class="d-flex gap-navbar  flex-column align-items-center flex-lg-row gap-29">
 
@@ -37,7 +39,7 @@
                                     class="c-white  fs-xl ff-Josefin mb-0  lh-22 fw-400 hoverline hoverline textanimation  position-relative nav-links text-nowrap">$GILD
                                     Nodes</a>
                             </li>
-                            <li><a href="#asked"
+                            <li><a href="#Contact"
                                     class="c-white  fs-xl ff-Josefin mb-0  lh-22 fw-400 hoverline hoverline textanimation position-relative nav-links text-nowrap">Contact
                                     us</a>
                             </li>
@@ -45,7 +47,13 @@
                         <div class="p-0 m-0">
                             <button
                                 class="btn-1 ff-poppins fw-600 fs-lg lh-24 c-white  d-flex align-items-center d-none d-md-block text-nowrap">
-                                <span><img src="./assets/img/svg/dcrdicon.svg" alt="dcrdicon.svg"></span>
+                                <span>       <span>
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.1813 0C21.6707 0 22.8719 1.2044 22.9428 2.62171V25.4226L20.1072 23.0149L18.55 21.5976L16.851 20.1167L17.5607 22.4524H2.69056C1.20546 22.4524 0 21.3243 0 19.8296V2.627C0 1.20969 1.20757 0.00317783 2.69586 0.00317783H20.1739L20.1813 0ZM13.7007 6.01986H13.6689L13.4549 6.23171C15.6508 6.86728 16.7132 7.85982 16.7132 7.85982C15.2981 7.15223 14.0227 6.79843 12.7473 6.65543C11.8257 6.51242 10.9042 6.58763 10.1256 6.65543H9.91376C9.4159 6.65543 8.35662 6.86728 6.93719 7.43399C6.44251 7.64902 6.15863 7.78991 6.15863 7.78991C6.15863 7.78991 7.22002 6.72852 9.5589 6.1618L9.4159 6.0188C9.4159 6.0188 7.64479 5.95101 5.7328 7.36408C5.7328 7.36408 3.82081 10.6944 3.82081 14.8002C3.82081 14.8002 4.88008 16.6433 7.78567 16.7132C7.78567 16.7132 8.20938 16.1486 8.63839 15.6518C7.00711 15.1561 6.37154 14.1646 6.37154 14.1646C6.37154 14.1646 6.51348 14.2345 6.7264 14.3765H6.78995C6.82173 14.3765 6.83656 14.3924 6.85351 14.4083V14.4146C6.87046 14.4316 6.88529 14.4464 6.91707 14.4464C7.26663 14.5905 7.61619 14.7324 7.90219 14.8701C8.39582 15.0841 9.03032 15.297 9.80889 15.4379C10.794 15.5809 11.9232 15.6497 13.2092 15.4379C13.8447 15.2949 14.4803 15.155 15.1159 14.8712C15.529 14.6593 16.0374 14.4475 16.5957 14.0905C16.5957 14.0905 15.9601 15.082 14.26 15.5777C14.6095 16.0713 15.1021 16.637 15.1021 16.637C18.0087 16.5734 19.1379 14.7303 19.2015 14.8087C19.2015 10.7093 17.2789 7.37255 17.2789 7.37255C15.547 6.08659 13.9263 6.03787 13.6403 6.03787L13.6996 6.01668L13.7007 6.01986ZM13.8786 10.6944C14.6233 10.6944 15.2239 11.33 15.2239 12.1086C15.2239 12.8924 14.6201 13.528 13.8786 13.528C13.1371 13.528 12.5333 12.8924 12.5333 12.1149C12.5355 11.3311 13.1403 10.6976 13.8786 10.6976V10.6944ZM9.06634 10.6944C9.80783 10.6944 10.4074 11.33 10.4074 12.1086C10.4074 12.8924 9.80359 13.528 9.0621 13.528C8.32061 13.528 7.71682 12.8924 7.71682 12.1149C7.71682 11.3311 8.32061 10.6976 9.0621 10.6976L9.06634 10.6944Z"
+                                            fill="white" />
+                                    </svg></span>
                                 Discord</button>
                         </div>
                     </div>
@@ -60,15 +68,19 @@
 
         <div class="container max-w-1320 d-flex flex-grow-1 flex-column align-items-center justify-content-center">
             <div class="d-flex flex-column align-items-center ">
-                <h3 class="ff-poppins fw-400 c-white lh-91 fs-6xl text-center mb-0 max-w-1320">There are games... And
+                <h3 class="ff-poppins fw-400 c-white lh-91 fs-6xl text-center mb-0 max-w-1024">There are games... And
                     then
                     there are <span class="text-purple">Gilded</span> Games</h3>
 
-                <h2 class="c-white fw-600 ff-Josefin lh-45 fs-3xl max-w-380 mb-0"> <span class="text-purple">19d
-                        :</span> 10hr : 2min : 55sec</h2>
+                    <div id="timer" class="fs-3xl lh-46 c-white">
+                        <div id="days"></div>
+                        <div id="hours"></div>
+                        <div id="minutes"></div>
+                        <div id="seconds"></div>
+                      </div>
                 <p class="c-white lh-22 fs-md ff-Josefin pb-22 mb-0">Remaining Presale Time</p>
-
-                <div class=" d-flex gap-20 pb-129">
+                <p id="countdown" class="c-white ff-Josefin fs-3xl lh-45 text-center mb-0 "></p>
+                <div class=" d-flex gap-20 ">
                     <button class="btn-2 ff-Josefin c-white fw-400 fs-2xl lh-24"> <span><img
                                 src="./assets/img/svg/shtdhnd.svg" alt=""></span> Presale</button>
                     <button class="btn-3 ff-Josefin c-white fw-400 lh-24 fs-2xl">Join Now</button>
@@ -76,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="background-img">
+    <section class="background-img mt_2 ">
         <div class="container max-w-1205">
             <div class="row pt-105 pb-194 ">
                 <div class="col-12 col-md-6">
@@ -99,86 +111,81 @@
             </div>
         </div>
     </section>
-    <section class="bg-black position-relative">
+    <section class="bg-black position-relative mt_2 ">
         <div class="position-absolute z-0 lftcloud ">
-            <img src="./assets/img/svg/lftcloud.svg" alt="lftcloud.svg" class="w-100">
+            <img src="./assets/img/lftcloud.png" alt="lftcloud.svg" class="w-100">
         </div>
         <div class="position-absolute z-0 rghtsmoke ">
             <img src="./assets/img/svg/rghtsmoke.svg" alt="rghtsmoke.svg" class="w-100">
 
         </div>
-        <div class="container max-w-1320 pb-110">
+        <div class="container max-w-1320 pb-110 z-1">
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="c-white fw-700 fs-5xl lh-61 ff-Josefin text-center mb-0 pb-16">Play To <span
+                <h2 class="c-white fw-700 fs-5xl lh-61 ff-Josefin text-center mb-0 pb-16" >Play To <span
                         class="blue">Earn</span> </h2>
-                <p class="op-70 c-white max-w-1024 pb-48 mb-0 text-center fs-lg ff-poppins fw-400">Gilded World will be
+                <p class="op-70 c-white max-w-1024 pb-48 mb-0 text-center fs-lg ff-poppins fw-400" >Gilded World will be
                     the first game released by Gilded
                     Games. It is an MMORPG, browser based game that is unlike any other. We have taken inspiration from
                     some of the most popular and successful MMORPG and RPG games and have boiled it down to the best
                     online gameplay that people will actually want to play!</p>
             </div>
-            <div class=" brdr">
+            <div class=" brdr z-1">
                 <img src="./assets/img/shrt.gif" alt="shrtvidopic.png" class="w-100 p-1">
             </div>
         </div>
     </section>
-    <section class="background-img-thrd position-relative ">
+    <section class="background-img-thrd position-relative mt_2  " id="Staking">
         <div class="container max-w-1320">
             <div class="d-flex align-items-center justify-content-center pt-228 pb-228">
-                <h2 class="max-w-940 c-white ff-Josefin fw-400 lh-62 fs-4xl text-center mb-0 position-relative d-inline-block semicolans">Gilded Games is a new type
+                <h2
+                    class="max-w-940 c-white ff-Josefin fw-400 lh-62 fs-4xl text-center mb-0 position-relative d-inline-block semicolans">
+                    Gilded Games is a new type
                     of gaming platform, partially owned and operated by its players. Earn Gild tokens by playing and use
                     them to decide the future of the game! </h2>
             </div>
         </div>
     </section>
-    <section class="background-img-forth">
+    <section class="background-img-forth mt_2 ">
         <div class="container max-w-1320">
             <div class="pt-130 ">
-                <h2 class="c-white fw-700 fs-5xl lh-61 ff-Josefin text-center mb-0"> <span class="blue">$GILD</span> Token
+                <h2 class="c-white fw-700 fs-5xl lh-61 ff-Josefin text-center mb-0"> <span class="blue">$GILD</span>
+                    Token
                     Info</h2>
             </div>
             <div class="row pb-59 pt-59">
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center">
                     <div class="crd-one">
-                        <div class="d-flex flex-column justify-content-center text-center align-items-center pb-3">
-                            <div class="d-flex flex-column">
-                                    <img src="./assets/img/svg/qubic.svg" alt="qubic.svg">
+                        <div class="d-flex flex-column justify-content-center text-center align-items-center h-100">
+                                <img src="./assets/img/svg/qubic.svg" alt="qubic.svg">
                                 <h2 class="c-white text-center fw-700 lh-38 fs-2xxl mb-0 pb-0">3 BIllion</h2>
-                                <p class="c-white fs-sm fw-400 lh-22 text-center pb-17 mb-0">GILD Token Info</p>
+                                <p class="c-white fs-sm fw-400 lh-22 text-center mb-0">GILD Token Info</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-md-0">
+                    <div class="crd-one">
+                        <div class="d-flex flex-column justify-content-center text-center align-items-center ">
+                                <img src="./assets/img/svg/hndwdollr.svg" alt="hndwdollr.svg">
                             </div>
-                        </div>
+                            <h2 class="c-white text-center fw-700 lh-38 fs-2xxl mb-0 pb-0">Pre Sale Token</h2>
+                            <p class="c-white fs-sm fw-400 lh-22 text-center mb-0">Holders</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-lg-0">
                     <div class="crd-one">
-                        <div class="d-flex flex-column justify-content-center text-center align-items-center pb-3">
-                            <div class="d-flex flex-column">
-                                    <img src="./assets/img/svg/hndwdollr.svg" alt="hndwdollr.svg">
-                                </div>
-                                <h2 class="c-white text-center fw-700 lh-38 fs-2xxl mb-0 pb-0">Pre Sale Token</h2>
-                                <p class="c-white fs-sm fw-400 lh-22 text-center mb-0 pb-17">Holders</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="crd-one">
-                        <div class="d-flex flex-column justify-content-center text-center align-items-center pb-3">
-                            <div class="d-flex flex-column">
-                                    <img src="./assets/img/svg/twoprsn.svg" alt="twoprsn.svg">
+                        <div class="d-flex flex-column justify-content-center text-center align-items-center h-100">
+                                <img src="./assets/img/svg/twoprsn.svg" alt="twoprsn.svg">
                                 <h2 class="c-white text-center fw-700 lh-38 fs-2xxl mb-0 pb-0">100,000+</h2>
-                                <p class="c-white fs-sm fw-400 lh-22 text-center mb-0 pb-17">Holders</p>
-                            </div>
+                                <p class="c-white fs-sm fw-400 lh-22 text-center mb-0">Holders</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-lg-0">
                     <div class="crd-one">
-                        <div class="d-flex flex-column justify-content-center text-center align-items-center pb-3">
-                            <div class="d-flex flex-column">
-                                    <img src="./assets/img/svg/nftcmpny.svg" alt="nftcmpny.svg">
+                        <div class="d-flex flex-column justify-content-center text-center align-items-center h-100">
+                                <img src="./assets/img/svg/nftcmpny.svg" alt="nftcmpny.svg">
                                 <h2 class="c-white text-center fw-700 lh-38 fs-2xxl mb-0 pb-0">2,500+</h2>
-                                <p class="c-white fs-sm fw-400 lh-22 text-center pb-17 mb-0">NFT Sold</p>
-                            </div>
+                                <p class="c-white fs-sm fw-400 lh-22 text-center mb-0">NFT Sold</p>
                         </div>
 
                     </div>
@@ -187,8 +194,79 @@
             </div>
         </div>
     </section>
-    <section class="background-img-fifth position-relative">
-        <div class="position-absolute backblr ">
+    <section class="bg-black overflow-hidden  mt_2">
+        <div class="container max-w-1640 pt-136 pb-75">
+            <h3 class="text-center c-white ff-Josefin fw-700 fs-5xl lh-61 mb-0"> <span
+                    class="text-purple">Road</span>map</h3>
+            <div class="row pt-128 position-relative">
+                <div class="position-absolute road-line d-none d-md-block">
+                    <img src="./assets/img/svg/road-line.svg" alt="road-line.svg">
+                </div>
+                <div class="position-absolute blue-screle d-none d-md-block">
+                    <img src="./assets/img/blue-screle-thrd.png" alt="blue-screle.svg">
+                </div>
+                <div class="position-absolute blue-screle-scnd d-none d-md-block">
+                    <img src="./assets/img/blue-screle-thrd.png" alt="blue-screle.svg">
+                </div>
+                <div class="position-absolute blue-screle-thrd d-none d-md-block">
+                    <img src="./assets/img/blue-screle-thrd.png" alt="blue-screle.svg">
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+                   <div class="d-flex flex-column">
+                    <h2 class="m-0 c-white ff-poppins lh-23 fs-md pt-38 ">Phase 1
+                        Q1 2022</h2>
+                    <h3 class="c-white fw-600 ff-poppins lh-46 fs-3xl mb-0 pb-2">
+                        Q1 2022</h3>
+
+                    <ul class="mb-0">
+                        <li class="liststyle c-white"> <a href="" class="c-white op-70 mb-0 fw-400 lh-32 fs-md">100,000+
+                                Airdrop</a></li>
+                        <li class="liststyle c-white"> <a href="" class="c-white op-70 mb-0 fw-400 lh-32 fs-md">100,000+
+                                Airdrop</a></li>
+                        <li class="liststyle c-white"> <a href="" class="c-white op-70 mb-0 fw-400 lh-32 fs-md">100,000+
+                                Airdrop</a></li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="col-12 col-md-4 col-md- d-flex justify-content-center">
+
+                   <div class="d-flex flex-column">
+                    <h2 class="m-0 c-white ff-poppins lh-23 fs-md pt-38 ">Phase 2
+                        Q2 2022</h2>
+                    <h3 class="c-white fw-600 ff-poppins lh-46 fs-3xl mb-0 pb-2">
+                        Q2 2022</h3>
+
+                    <ul class=" mb-0">
+                        <li class="liststyle c-white"> <a href="" class="c-white op-70 mb-0 fw-400 lh-32 fs-md">Token & Staking Release</a></li>
+                        <li class="liststyle c-white"> <a href="" class="c-white op-70 mb-0 fw-400 lh-32 fs-md">Staking Gameplay
+                        </a></li>
+                   </div>
+                </div>
+                <div class="col-12 col-md-4 col-md6 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-start">
+                        <h2 class="m-0 c-white ff-poppins lh-23 fs-md pt-38">Phase 3
+                            Q2 2022</h2>
+                        <h3 class="c-white fw-600 ff-poppins lh-46 fs-3xl mb-0 pb-2">
+                            Q3 2022</h3>
+    
+                        <ul class=" mb-0  d-flex flex-column">
+                            <li class="liststyle c-white"> <a href="" class=" c-white liststyle op-70 mb-0 fw-400 lh-32 fs-md">MVP Gameplay Release</a> </li>
+                            <li class="liststyle c-white"> <a href="" class=" c-white op-70 mb-0 fw-400 lh-32 fs-md">Battle Modes Release
+                            <li class="liststyle c-white"> <a href="" class=" c-white op-70 mb-0 fw-400 lh-32 fs-md">Battle Modes Release
+                            </a></li>
+                            <li class="liststyle c-white"> <a href class=" c-white op-70 mb-0 fw-400 lh-32 fs-md">Land Gameplay Release
+                            </a></li>
+                            <li class="liststyle c-white"> <a href class=" c-white op-70 mb-0 fw-400 lh-32 fs-md">Gear Forging Release
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="background-img-fifth position-relative mt_2 " id="$GILD">
+        <div class="position-absolute backblr d-none d-xx-block ">
             <img src="./assets/img/backblr.png" alt="backblr.png">
         </div>
         <div class="container max-w-1140">
@@ -198,56 +276,56 @@
                         <h3 class="c-white max-w-377 ff-Josefin fw-700 fs-5xl lh-61 mb-0 pb-20 ">Buy On <span
                                 class="blue">Uniswap</span> </h3>
 
-                        <div>
-                            <ul>
-                                <li style="list-style-type: disc;"> <span
-                                        class="c-white fw-400 fs-lg lh-35 mb-0">100,000+ Airdrop</span></li>
-                            </ul>
-                            <ul>
-                                <li style="list-style-type: disc;"> <span class="c-white fw-400 fs-lg lh-35 mb-0">NFT
-                                        $GILD giveaway</span></li>
-                            </ul>
-                            <ul>
-                                <li style="list-style-type: disc;"> <span
-                                        class="c-white fw-400 fs-lg lh-35 mb-0">Announcement and Games</span></li>
-                            </ul>
 
-                            <button class="btn-2 c-white ff-Josefin fw-400 lh-24 fs-2xl gap-10"> <span><img
-                                        src="./assets/img/svg/horseface.svg" alt="horseface.svg"></span>Buy Now</button>
+                        <ul>
+                            <li style="list-style-type: disc;"> <span class="c-white fw-400 fs-lg lh-35 mb-0">100,000+
+                                    Airdrop</span></li>
+                        </ul>
+                        <ul>
+                            <li style="list-style-type: disc;"> <span class="c-white fw-400 fs-lg lh-35 mb-0">NFT
+                                    $GILD giveaway</span></li>
+                        </ul>
+                        <ul>
+                            <li style="list-style-type: disc;"> <span
+                                    class="c-white fw-400 fs-lg lh-35 mb-0">Announcement and Games</span></li>
+                        </ul>
+
+                        <button class="btn-2 c-white ff-Josefin fw-400 lh-24 fs-2xl gap-10"> <span><img
+                                    src="./assets/img/svg/horseface.svg" alt="horseface.svg"></span>Buy Now</button>
 
 
-                        </div>
+
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center mt-5 mt-md-0">
                     <img src="./assets/img/goldbfifcase.png" alt="goldbfifcase.png" class="max-w-341">
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-black">
+    <section class="bg-black mt_2 " id="Presale">
         <div class="container max-w-1320">
             <div class="row pt-59 pb-194">
-                
-                    <h3 class="ff-Josefin fw-700 fs-5xl c-white lh-62 pb-68 mb-0 text-center"> <span
-                            class="blue">Powered</span> By:</h3>
-            
-                <div class="col-lg-3 col-md-6 col-12">
+
+                <h3 class="ff-Josefin fw-700 fs-5xl c-white lh-62 pb-68 mb-0 text-center"> <span
+                        class="blue">Powered</span> By:</h3>
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-md-0 ">
                     <div class="box-frst  d-flex justify-content-center align-items-center px-12">
                         <img src="./assets/img/svg/uu.svg" alt="svg/uu.svg" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-md-0 ">
                     <div class="box-frst d-flex justify-content-center align-items-center px-20">
                         <img src="./assets/img/svg/boxhorse.svg" alt="boxhorse.svg" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-lg-0 ">
                     <div class="box-frst d-flex justify-content-center align-items-center px-32">
                         <img src="./assets/img/svg/senta.svg" alt="senta.svg" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center mt-lg-0">
                     <div class="box-frst d-flex justify-content-center align-items-center">
                         <img src="./assets/img/svg/box.svg" alt="box.svg" class="w-100">
                     </div>
@@ -255,7 +333,7 @@
             </div>
         </div>
     </section>
-    <section class="footrbgpic position-relative">
+    <section class="footrbgpic position-relative mt_2 " id="Contact">
         <div class="container max-w-1140">
             <div class=" d-flex justify-content-center">
                 <h2 class=" mb-0 c-white ff-work fw-400 fs-5xl lh-56">Frequently Asked <span
@@ -263,7 +341,7 @@
             </div>
             <div class="accord mx-auto py-accordian z-1">
                 <div class="accordion  accordion-flush " id="accordionFlushExample">
-                    <div class="accordion-item ">
+                    <div class="accordion-item mt-4 ">
                         <h2 class="accordion-header ">
                             <button class="accordion-button bg-transparent collapsed d-flex align-items-start z-1"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
@@ -279,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item ">
+                    <div class="accordion-item mt-4 ">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed d-flex align-items-start z-1" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false"
@@ -295,7 +373,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item ">
+                    <div class="accordion-item mt-4 ">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed d-flex align-items-start z-1" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapsethree" aria-expanded="false"
@@ -311,7 +389,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item ">
+                    <div class="accordion-item mt-4 ">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed d-flex align-items-start z-1" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
@@ -327,7 +405,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item ">
+                    <div class="accordion-item mt-4 ">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed d-flex align-items-start z-1" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
@@ -347,47 +425,63 @@
             </div>
         </div>
         <div class="container max-w-1320">
-            <div class="row pb-5 align-items-center">
-                <div class="col-8">
+            <div class="row pb-5 align-items-lg-center">
+                <div class="col-12 col-sm-8">
                     <img src="./assets/img/hdrlogo.png" alt="hdrlogo.png">
-                    <p class="op-70 c-white ff-poppins fw-400 fs-sm lh-28 pt-10 w_367 mb-0 pb-27">Lorem ipsum dolor sit amet,
+                    <p class="op-70 c-white ff-poppins fw-400 fs-sm lh-28 pt-10 w_367 mb-0 pb-27">Lorem ipsum dolor sit
+                        amet,
                         consectetur adipiscing elit. Proin curabitur iaculis id cursus dignissim.</p>
                     <ul class="d-flex gap-2 ps-0 mb-0">
-                        <li><a class="social-links d-flex align-items-center justify-content-center" href="https://twitter.com/?lang=en" target="_blank">
-                            <img src="./assets/img/svg/twitr.svg" alt="twitr.svg">
-                        </a></li>
-                        <li><a class="social-links d-flex align-items-center justify-content-center" href="https://twitter.com/?lang=en" target="_blank">
+                        <li><a class="social-links d-flex align-items-center justify-content-center"
+                                href="https://twitter.com/?lang=en" target="_blank">
                                 <img src="./assets/img/svg/twitr.svg" alt="twitr.svg">
                             </a></li>
-                        <li class="social-link-border"><a class="social-links d-flex align-items-center justify-content-center" href="">
+                        <li><a class="social-links d-flex align-items-center justify-content-center"
+                                href="https://twitter.com/?lang=en" target="_blank">
+                                <img src="./assets/img/svg/twitr.svg" alt="twitr.svg">
+                            </a></li>
+                        <li class="social-link-border"><a
+                                class="social-links d-flex align-items-center justify-content-center"
+                                href="https://web.telegram.org/a/" target="_blank">
                                 <img src="./assets/img/svg/taligram.svg" alt="taligram.svg">
                             </a></li>
-                        <li><a class="social-links d-flex align-items-center justify-content-center" href="">
+                        <li><a class="social-links d-flex align-items-center justify-content-center" href=""
+                                target="_blank">
                                 <img src="./assets/img/svg/threescril.svg" alt="threescril.svg">
                             </a></li>
-                        <li><a class="social-links d-flex align-items-center justify-content-center" href="">
+                        <li><a class="social-links d-flex align-items-center justify-content-center"
+                                href="https://github.com/">
                                 <img src="./assets/img/svg/crtnboy.svg" alt="crtnboy.svg">
                             </a></li>
-                        <li><a class="social-links d-flex align-items-center justify-content-center" href="">
+                        <li><a class="social-links d-flex align-items-center justify-content-center"
+                                href="https://github.com/" target="_blank">
                                 <img src="./assets/img/svg/github.svg" alt="github.svg">
                             </a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-sm-4 col-md-2">
                     <ul class=" m-0 p-0 d-flex flex-column gap-16">
                         <li><a class=" mb-0 c-white ff-Josefin fw-600 lh-28 fs-sm">About:</a></li>
-                        <li class=" pt_2"><a class=" cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">About Us</a></li>
-                        <li><a class=" cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Career</a></li>
-                        <li><a class="cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Gilded Nodes</a></li>
+                        <li class=" pt_2"><a
+                                class=" cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">About
+                                Us</a></li>
+                        <li><a class=" cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Career</a>
+                        </li>
+                        <li><a class="cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Gilded
+                                Nodes</a></li>
 
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-12 col-sm-6 col-md-2">
                     <ul class=" m-0 p-0 d-flex flex-column gap-16">
                         <li><a class=" mb-0 c-white ff-Josefin fw-600 lh-28 fs-sm">Gilded Token:</a></li>
-                        <li class=" pt_2"><a class=" cp op-70 fw-400 hoverline hoverline textanimation fs-sm lh-28 c-white">Etherscan.io</a></li>
-                        <li><a class=" cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Github</a></li>
-                        <li><a class="cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Uniswap</a></li>
+                        <li class=" pt_2"><a
+                                class=" cp op-70 fw-400 hoverline hoverline textanimation fs-sm lh-28 c-white">Etherscan.io</a>
+                        </li>
+                        <li><a class=" cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Github</a>
+                        </li>
+                        <li><a class="cp op-70 fw-400 fs-sm lh-28 hoverline hoverline textanimation c-white">Uniswap</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -396,7 +490,8 @@
         <div class="prpline h-[1px] w-full mt-70 opacity_10"></div>
         <div>
             <p class="mb-0 text-center fs-sm lh-28 ff-Josefin fw-400 c-white pt-10 pb-14 op-60 ">© Copyright $GILD 2021
-                <span class="mb-0 text-center fs-sm lh-28 ff-Josefin fw-400 c-white">Policy</span></p>
+                <span class="mb-0 text-center fs-sm lh-28 ff-Josefin fw-400 c-white">Policy</span>
+            </p>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
