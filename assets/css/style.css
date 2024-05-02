@@ -595,6 +595,10 @@ padding: 16px 19px;
 }
 
 
+.dotd-lin{
+    top: 21%;
+    left: 80%;
+}
 
 
 
@@ -619,14 +623,17 @@ padding: 16px 19px;
 
 
 
-
-
+.z-index3{
+    z-index: 30;
+}
 .mt_2 {
     margin-top: -2px;
 }
 
 @media (min-width:768px) {
-
+    .z-index3{
+        z-index: auto !important;
+    }
     .pb-194 {
         padding-bottom: 194px;
     }
@@ -760,13 +767,15 @@ padding: 16px 19px;
         display: block;
         flex-direction: column;
         justify-content: space-between;
-        z-index: 100;
+        z-index: 102 !important;
         /* right: 3%; */
         /* position: absolute; */
     }
 
     .bar1 {
         width: 100% !important;
+        z-index: 102 !important;
+
         /* margin-left: 14px !important; */
     }
 
@@ -776,7 +785,8 @@ padding: 16px 19px;
 
     .menuIcon span {
         height: 3px;
-        z-index: 44;
+        z-index: 102 !important;
+
         width: 100%;
         display: block;
         background-color: white;
